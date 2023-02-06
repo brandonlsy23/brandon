@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="weather.css" rel="stylesheet" />
+    <title></title>
+    <script src="packages/jQuery.3.1.1/Content/Scripts/jquery-3.1.1.min.js"></script>
+    <script src="geolocation.js"></script>
+    <script src="weather.js"></script>
+
+</head>
+<body>
+    <header class="title">
+        <h1>My Weather</h1>
+    </header>
+    <main>
+        <h2>Geolocation</h2>
+        <form id="theForm" name="theForm" method="get" action="submit.html">
+            <input id="latitude" name="latitude" type="text" value="1234" onsubmit="required()"/>
+            <input id="longitude" name="longitude" type="text" value="" required/>
+            <input type="button" id="getWeatherBtn" value="Get Weather" /> <!--onclick="getWeather()-->
+        </form>
+        <div class="Container">
+            <h2>Forecast</h2>
+        </div>
+        <div class="tableContainer">
+            <table>
+                <tr class="redRow">
+                    <td class="blankBox"></td>
+                    <td>1 AM</td>
+                    <td>4 AM</td>
+                    <td>7 AM</td>
+                    <td>10 AM</td>
+                    <td>1 PM</td>
+                    <td>4 PM</td>
+                    <td>7 PM</td>
+                    <td>10 PM</td>
+                </tr>
+                <tr class="blueRow">
+                    <td id="firstDay" class="greenBox"></td>
+                    <td id="firstDayOneAM"></td>
+                    <td id="firstDayFourAM"></td>
+                    <td id="firstDaySevenAM"></td>
+                    <td id="firstDayTenAM"></td>
+                    <td id="firstDayOnePM"></td>
+                    <td id="firstDayFourPM"></td>
+                    <td id="firstDaySevenPM"></td>
+                    <td id="firstDayTenPM"></td>
+                </tr>
+                <tr class="blueRow">
+                    <td id="secondDay" class="greenBox"></td>
+                    <td id="secondDayOneAM"></td>
+                    <td id="secondDayFourAM"></td>
+                    <td id="secondDaySevenAM"></td>
+                    <td id="secondDayTenAM"></td>
+                    <td id="secondDayOnePM"></td>
+                    <td id="secondDayFourPM"></td>
+                    <td id="secondDaySevenPM"></td>
+                    <td id="secondDayTenPM"></td>
+                </tr>
+                <tr class="blueRow">
+                    <td id="thirdDay" class="greenBox"></td>
+                    <td id="thirdDayOneAM"></td>
+                    <td id="thirdDayFourAM"></td>
+                    <td id="thirdDaySevenAM"></td>
+                    <td id="thirdDayTenAM"></td>
+                    <td id="thirdDayOnePM"></td>
+                    <td id="thirdDayFourPM"></td>
+                    <td id="thirdDaySevenPM"></td>
+                    <td id="thirdDayTenPM"></td>
+                </tr>
+                <tr class="blueRow">
+                    <td id="fourthDay" class="greenBox"></td>
+                    <td id="fourthDayOneAM"></td>
+                    <td id="fourthDayFourAM"></td>
+                    <td id="fourthDaySevenAM"></td>
+                    <td id="fourthDayTenAM"></td>
+                    <td id="fourthDayOnePM"></td>
+                    <td id="fourthDayFourPM"></td>
+                    <td id="fourthDaySevenPM"></td>
+                    <td id="fourthDayTenPM"></td>
+                </tr>
+                <tr class="blueRow">
+                    <td id="lastDay" class="greenBox"></td>
+                    <td id="lastDayOneAM"></td>
+                    <td id="lastDayFourAM"></td>
+                    <td id="lastDaySevenAM"></td>
+                    <td id="lastDayTenAM"></td>
+                    <td id="lastDayOnePM"></td>
+                    <td id="lastDayFourPM"></td>
+                    <td id="lastDaySevenPM"></td>
+                    <td id="lastDayTenPM"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="Container">
+            <h2>Line chart</h2>
+        </div>
+        <div class="canvasContainer">
+            <canvas id="canvas" width="1230" height="510">
+            </canvas>
+        </div>
+    </main>
+</body>
+</html>

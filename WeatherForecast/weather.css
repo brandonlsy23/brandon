@@ -1,0 +1,64 @@
+﻿body {
+}
+.title {
+    margin: 30px 0 0 30px;
+}
+
+main {
+    margin: 30px 0 0 50px;
+    
+}
+
+.tableContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.canvasContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+table{
+    margin-right:50px;
+}
+
+canvas {
+    background-color: #ffe6cc;
+}
+h1 {
+    font-weight: bold;
+    
+}
+.Container {
+    align-content: center;
+    text-align: center;
+}
+h2 {
+    font-weight: bold;
+}
+
+.redRow td {
+    background-color: #ff8080;
+    height: 80px;
+    width: 80px;
+}
+
+.blueRow td {
+    background-color: #99e6ff;
+    height: 80px;
+    width: 80px;
+    text-align:center;
+}
+.blankBox{
+    background-color: white !important;
+}
+
+.greenBox {
+    background-color: #80ff80 !important;
+}
+
