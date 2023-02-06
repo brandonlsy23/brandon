@@ -1,0 +1,157 @@
+﻿body {
+}
+header {
+    width: 100vw;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-color: #42f5f5;
+    object-fit: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main {
+    width: 100vw;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    object-fit: cover;
+    position: relative;
+    align-items:center;
+}
+h1 {
+    text-align: center;
+    padding-top:20px;
+}
+
+.diceLogo {
+    background-image: url(6.png);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    width: 180px;
+    height: 50px;
+    margin: 10px;
+    margin-top: 70px;
+    background-size: contain;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    transform: rotate(30deg);
+    
+}
+
+.diceLogo:hover {
+    height: 40px;
+    background: linear-gradient(90def, transparent,#C0C0C0 );
+    animation: animate3 1s linear infinite;
+    animation-delay: 0s;
+}
+
+.diceLogo2 {
+    background-image: url(6.png);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    width: 60px;
+    height: 50px;
+    margin: 10px;
+    background-size: contain;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    transform: rotate(30deg);
+}
+
+.diceLogo2:hover {
+    height: 40px;
+    background: linear-gradient(90def, transparent,#C0C0C0 );
+    animation: animate3 1s linear infinite;
+    animation-delay: 0s;
+}
+.unknownDice {
+    background-image: url(q.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: contain;
+    width: 100px;
+    height: 90px;
+    margin: 10px;
+    background-size: contain;
+    position:relative;
+    
+}
+
+.buttonContainer {
+    justify-content: center;
+    align-items: center;
+    max-width: 998px;
+    margin-left: 950px;
+    padding: 20px 0 40px 0;
+}
+
+.diceContainer {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tableContainer {
+    display:flex;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+.lowerSection {
+    display: flex;
+    height: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.rButton {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ruleSection {
+    display: flex;
+    height: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+#resetButton {
+    background-color: #555555; 
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.totalTable th{
+    padding : 5px;
+}
+table, th, td {
+    border: 1px solid black;
+    text-align: left;
+    background-color: #ccffcc;
+}
+table {
+    margin: 0 10px;
+}
+
+.savedDice {
+  opacity: 0.65;
+}
+
+.Disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: 0.65;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.blank{
+    border: 0px;
+}
